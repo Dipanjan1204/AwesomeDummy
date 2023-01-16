@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="624be927475061102c64b7f3846d437e" label="awesome" max_length="40" name="x_816961_awesome_d_awesome" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Awesome 1" max_length="40" name="awesome_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Awesome 2" max_length="40" name="awesome_2" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
