@@ -11,7 +11,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>awesome_flow</internal_name>
-        <label_cache>[{"name":"e8e52a00-e57e-417e-935b-a5407b9854e2.Record","label":"1 - Create Task➛Record","reference":"task","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e8e52a00-e57e-417e-935b-a5407b9854e2.Table","label":"1 - Create Task➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e8e52a00-e57e-417e-935b-a5407b9854e2.__action_status__","label":"1 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"e8e52a00-e57e-417e-935b-a5407b9854e2.__dont_treat_as_error__","label":"1 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <label_cache>[{"name":"e8e52a00-e57e-417e-935b-a5407b9854e2.__dont_treat_as_error__","label":"1 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e8e52a00-e57e-417e-935b-a5407b9854e2.__action_status__","label":"1 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e8e52a00-e57e-417e-935b-a5407b9854e2.Table","label":"1 - Create Task➛Incident Table","reference":"incident","reference_display":"Incident Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e8e52a00-e57e-417e-935b-a5407b9854e2.Record","label":"1 - Create Task➛Incident Record","reference":"incident","reference_display":"Incident Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e8cd102b-0eae-4b65-8e70-8d83840aaf19.email","label":"2 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e8cd102b-0eae-4b65-8e70-8d83840aaf19.__action_status__","label":"2 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"e8cd102b-0eae-4b65-8e70-8d83840aaf19.__dont_treat_as_error__","label":"2 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.awesome_1","label":"Trigger - Record Created➛awesome Record➛Awesome 1","reference":"","reference_display":"Awesome 1","type":"string","base_type":"string","parent_table_name":"x_816961_awesome_d_awesome","column_name":"awesome_1"}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
         <name>Awesome Flow</name>
@@ -51,10 +51,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-16 03:13:45</sys_created_on>
         <sys_id>627ce5a7475061102c64b7f3846d43b4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-16 03:13:45</sys_updated_on>
+        <sys_updated_on>2023-01-16 03:21:44</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -272,7 +272,7 @@
     </sys_hub_flow_input>
     <sys_hub_flow_output action="delete_multiple" query="model=f13c21e3475061102c64b7f3846d4378"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f13c21e3475061102c64b7f3846d4378"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=f13c21e3475061102c64b7f3846d4378^sys_idNOT IN667ce5a7475061102c64b7f3846d43bb"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f13c21e3475061102c64b7f3846d4378^sys_idNOT IN667ce5a7475061102c64b7f3846d43bb,af4eed2b475061102c64b7f3846d436b"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
@@ -287,10 +287,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-16 03:13:45</sys_created_on>
         <sys_id>667ce5a7475061102c64b7f3846d43bb</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Awesome Dummy">aeea216b47dc21102c64b7f3846d4367</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-16 03:13:45</sys_updated_on>
+        <sys_updated_on>2023-01-16 03:21:44</sys_updated_on>
         <ui_id>e8e52a00-e57e-417e-935b-a5407b9854e2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=667ce5a7475061102c64b7f3846d43bb"/>
@@ -311,6 +311,43 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759^id=667ce5a7475061102c64b7f3846d43bb"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=667ce5a7475061102c64b7f3846d43bb"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=667ce5a7475061102c64b7f3846d43bb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Awesome Flow">f13c21e3475061102c64b7f3846d4378</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-16 03:21:44</sys_created_on>
+        <sys_id>af4eed2b475061102c64b7f3846d436b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Awesome Dummy">aeea216b47dc21102c64b7f3846d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-16 03:21:44</sys_updated_on>
+        <ui_id>e8cd102b-0eae-4b65-8e70-8d83840aaf19</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=af4eed2b475061102c64b7f3846d436b"/>
+    <sys_element_mapping action="delete_multiple" query="id=af4eed2b475061102c64b7f3846d436b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>af4eed2b475061102c64b7f3846d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-16 03:21:44</sys_created_on>
+        <sys_id>e34eed2b475061102c64b7f3846d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-16 03:21:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.awesome_1}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=af4eed2b475061102c64b7f3846d436b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=af4eed2b475061102c64b7f3846d436b"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f13c21e3475061102c64b7f3846d4378"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=f13c21e3475061102c64b7f3846d4378"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=f13c21e3475061102c64b7f3846d4378"/>
